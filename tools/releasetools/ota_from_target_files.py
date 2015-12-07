@@ -587,8 +587,9 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
 
     script.Print("******************************************");
-    script.Print("*     Chroma ROM for %s           *"%(model));
+    script.Print("*     Cold Fusion ROM for %s     *"%(model));
     script.Print("*     Compiled: %s *"%(build));
+    script.Print("*         By Joe-Tech *"); 
     script.Print("******************************************");
 
   script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
